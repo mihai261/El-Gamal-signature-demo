@@ -1,0 +1,6 @@
+>> python3 elgamal_ecc.py --mode generate --key ./private_key > public_key
+>> python3 elgamal_ecc.py --mode sign --key ./private_key --message 'some secret message' > signature
+>> python3 elgamal_ecc.py --mode verify --key ./public_key --message 'some secret message' --signature ./signature
+Signature is valid
+>> python3 elgamal_ecc.py --mode verify --key ./public_key --message 'some secret messages' --signature ./signature
+Signature is NOT valid
